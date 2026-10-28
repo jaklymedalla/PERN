@@ -1,0 +1,18 @@
+- Install node and npm in device.
+
+- Initialize expressjs in the expressjs folder by npm init -y
+- then npm install express
+- then go to package.json to under scripts change "test" and its value to 
+  "dev": "node --watch server.js"
+- then go to package.json add "type": "module" next to license
+- post(add) using the terminal:
+curl -X POST http://localhost:3000/api/v1/cars -H "Content-Type: application/json" -d "{\"make\":\"Chevrolet\",\"model\":\"Corvette\",\"year\":2023,\"price\":65000}"
+- put(edit) using terminal:
+curl -X PUT http://localhost:3000/api/v1/cars/2 -H "Content-Type: application/json" -d "{\"make\":\"Tesla\",\"model\":\"Model S\",\"year\":2023,\"price\":25000}"
+{"id":2,"make":"Tesla","model":"Model S","year":2023,"price":25000}
+- delete using terminal:
+curl -X DELETE http://localhost:3000/api/v1/cars/4
+
+or just use Bruno to run post, put and delete 
+
+signin to arcjet to have the key.
