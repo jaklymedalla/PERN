@@ -84,3 +84,5 @@ go to reactjs folder then edit vite.config wit this
       }
     }
   }
+
+use refinecore for react templates
